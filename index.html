@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+  }
+  .mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #424345;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  transform: rotate(30deg);
+  
+}
+
+.active, .dot:hover {
+  background-color: yellow;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+  /* Create three unequal columns that floats next to each other */
+  .column1 {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left{
+    width: 22%;
+  }
+  
+  .middle {
+      width: 20%;
+  }
+  
+  .right {
+    width: 58%;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+  }
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column2 {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left1{
+    width: 70%;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+  }
+  
+  .right1{
+    width: 30%;
+  }
+  
+  .left2{
+    width: 22%;
+    border:1px solid black;
+  }
+
+  .right2{
+    width: 78%;
+    border:1px solid black;
+  }
+
+  .column3 {
+    float: left;
+    padding: 10px;
+    height: 310px; /* Should be removed. Only for demonstration */
+  }
+  .row4:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+  .column4 {
+  float: left;
+  width: 22%;
+  padding: 5px;
+  height: auto;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="row1" style="border: black; border-width: 1px; border-style: solid; border-bottom: 1px;">
+  <div class="column1 left" style="background-color:#ffd933">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>OUR<br> OFFERINGS</h2>
+  </div>
+  <div class="column1 middle" style="background-color:#706f6c">
+    <h2>BRAND CONSULTING</h2>
+    <span style="color: yellow;">/</span> <span style="color: white;">Brand Development</span><br>
+    <span style="color: yellow;">/</span> <span style="color: white;">Brand Architecture</span><br>
+    <span style="color: yellow;">/</span> <span style="color: white;">Brand Identity</span><br>
+    <span style="color: yellow;">/</span> <span style="color: white;">Brand Building</span><br>
+    <span style="color: yellow;">/</span> <span style="color: white;">Digital Transformation Digit</span><br><br>
+   <span><i class="fa fa-angle-down" style="font-size:24px; color: yellow;"></i></span> 
+    <span style="color: yellow;">More</span>
+  </div>
+  <div class="column1 right" style="background-color:white; color: black;">
+    
+    <p>Our Brand Consulting practice covers every critical aspect <br>
+      of building and crafting brands - Forum Purpose to Proposition to Portfolio. Our proprietary BrandGenome<br>
+      framework captures every aspect of the brand that can and should drive business and communication. Through DigiT, <br>
+      this practice also helps and guides brands embarking on <br>
+      their digital transformation journey.</p>
+  </div>
+</div>
+
+
+<div class="row2">
+  <div class="column2 left1" style="background-color:black; color: white; text-align: center;">
+   
+    <p>Some text..</p>
+  </div>
+  <div class="column2 right1" style="background-color:black; color: white; text-align: center;">
+    <h2>OUR</h2>
+    <h2 style="color: yellow; text-align: center;">APPROACH</h2>
+    
+  </div>
+</div>
+
+<div class="row3">
+  <div class="column3 left2" style="background-color:yellow; color: black; text-align: center;">
+   
+    <h2>Our Clients</h2>
+  </div>
+  <div class="column3 right2 slideshow-container" style="background-color:white; color: black;">
+    <!--images-->
+    <div class="mySlides fade">
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+    
+
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+  </div>    <!--fade ends-->
+
+  <div class="mySlides fade">
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+    
+
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+  </div>    <!--fade ends-->
+    
+  <div class="mySlides fade">
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+    
+
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+  </div>    <!--fade ends-->
+    
+  <div class="mySlides fade">
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" class="i1" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+    
+
+    <div class="row4">
+      <div class="column4" style="margin-left: 40px; margin-right: 40px;">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+      <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+       <div class="column4">
+        <img src="circleimage.png" style="width:50%; border-radius:50%; border: solid; margin-left: 50px;">
+      </div>
+    </div>
+  </div>    <!--fade ends-->
+    
+ 
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div> 
+</div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+</body>
+</html>
